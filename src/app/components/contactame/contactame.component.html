@@ -1,0 +1,53 @@
+<div class="sectionForm">
+  <div class="form">
+    <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <h2>Formulario de contacto</h2>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" [formControl]="name" placeholder="Ingrese su nombre" required>
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" [formControl]="email" placeholder="Ingrese su correo" required>
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" [formControl]="asunt" placeholder="Ingrese el asunto" required>
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" [formControl]="message" placeholder="Ingrese la descripción" required></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+  <div class="asideForm">
+    <h2>Redes Sociales</h2>
+    <div class="Red">
+      <div class="Linkedin">
+        <a href="https://www.linkedin.com/in/juan-esteban-carrillo-garcia-4873a5252/" target="_blank"> Linkedin</a>
+      </div>
+      <div class="imgRed">
+        <img src="assets/Linkedin.png" alt="">
+      </div>
+    </div>
+    <div class="Red">
+      <div class="Facebook">
+        <a href="https://www.facebook.com/juanesteban.carrillogarcia/" target="_blank">Facebook</a>
+      </div>
+      <div class="imgRed">
+        <img src="assets/Facebook.png" alt="">
+      </div>
+    </div>
+    <div class="Red">
+      <div class="Instagram">
+        <a href="https://www.instagram.com/_juan__carrillo_/" target="_blank">Instagram</a>
+      </div>
+      <div class="imgRed">
+        <img src="assets/Instagram.png" alt="">
+      </div>
+    </div>
+    <h2>Numero Telefonico</h2>
+    <div class="Red">
+      <div class="Whatsapp">
+        <p>+57 304 4163114</p>
+      </div>
+      <div class="imgRed">
+        <img src="assets/Whatsapp.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+

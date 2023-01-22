@@ -1,0 +1,121 @@
+<div class="main">
+    <div class="aboutMe" data-aos="zoom-in-up">
+        <h2 class="title" >Proyectos</h2>
+    </div>
+    <div class="boxProject" *ngIf="proyectos[0]">
+        <div class="flechaIzq" type="button" (click)="showProjectsBack()" data-aos="zoom-in-up">
+            <img src="assets/FlechaIzq.png" alt="">
+        </div>
+        <div class="infoProject">
+            <div class="boxtitle">
+                <h3>Retos Frontend Mentor</h3>
+            </div>
+            <p class="text">
+                Creación de componentes bajo la plataforma de retos ”Frontend Mentor” haciendo uso de <b>HTML, CSS, JS puro</b>.
+                <br><br><br>Ingresa a mi perfil : <a href="https://www.frontendmentor.io/profile/JuanCarrill0" target="_blank">Dale click Aquí</a>
+            </p>
+        </div>
+        <div class="imageProject">
+            <img src="assets/Mentor.png" alt="">
+        </div>
+        <div class="flechaDer" type="button" (click)="showProjectsFront()" data-aos="zoom-in-up">
+            <img src="assets/Flecha.png" alt="">
+        </div>
+    </div>
+    <div class="boxProject" *ngIf="proyectos[1]">
+        <div class="flechaIzq" type="button" (click)="showProjectsBack()" data-aos="zoom-in-up">
+            <img src="assets/FlechaIzq.png" alt="">
+        </div>
+        <div class="imageProject">
+            <img src="assets/Registraduria.png" alt="">
+        </div>
+        <div class="infoProject">
+            <div class="boxtitle">
+                <h3>Proyecto MINTIC</h3>
+            </div>
+            <p class="text">
+                Creación de servicio web completo CRUD simulando el módulo de registro de resultados de las elecciones de la registraduria.
+                -Frontend: <b>Angular</b><br>
+                -Backend de resultados - ApiGateway: <b>Python</b> <br>
+                -Backend de seguridad: <b>Spring Boot Java</b><br>
+                -Despligue base de datos: <b>MongoDB </b><br>
+                <br><br>Ingresa a mi repositorio : <a href="https://github.com/JuanCarrill0/ProyectoTIC" target="_blank">Dale click Aquí</a>
+            </p>
+        </div>
+        <div class="flechaDer" type="button" (click)="showProjectsFront()" data-aos="zoom-in-up">
+            <img src="assets/Flecha.png" alt="">
+        </div>
+    </div>
+    <div class="boxProject" *ngIf="proyectos[2]">
+        <div class="flechaIzq" type="button" (click)="showProjectsBack()" data-aos="zoom-in-up">
+            <img src="assets/FlechaIzq.png" alt="">
+        </div>
+        <div class="infoProject">
+            <div class="boxtitle">
+                <h3>Repositorio Estructura de datos</h3>
+            </div>
+            <p class="text">
+                Repositorio GitHub con ejercicios orientados a la estructuras de datos realizados en c++. <br>
+                Estructuras Lineales y Dinamicas tales como:<br>
+                <b>1.  Pilas</b><br>
+                <b>2. Colas</b><br>
+                <b>3. Arboles</b><br>
+                <b>4 .Listas</b><br>
+                <br><br>Ingresa al repositorio : <a href="https://github.com/JuanCarrill0/Estructuras-de-datos-c-" target="_blank">Dale click Aquí</a>
+            </p>
+        </div>
+        <div class="imageProject">
+            <img src="assets/Estructuras.jpg" alt="">
+        </div>
+        <div class="flechaDer" type="button" (click)="showProjectsFront()" data-aos="zoom-in-up">
+            <img src="assets/Flecha.png" alt="">
+        </div>
+    </div>
+    <div class="boxProject" *ngIf="proyectos[3]">
+        <div class="flechaIzq" type="button" (click)="showProjectsBack()" data-aos="zoom-in-up">
+            <img src="assets/FlechaIzq.png" alt="">
+        </div>
+        <div class="imageProject">
+            <img src="assets/Patrones.jpg" alt="">
+        </div>
+        <div class="infoProject">
+            <div class="boxtitle">
+                <h3>Repositorio Patrones de Diseño</h3>
+            </div>
+            <p class="text">
+                Repositorio GitHub con ejercicios orientados a los patrones de diseños.<br>
+                <b>1.  Patrones Creaciones </b><br>
+                <b>2. Patrones Estructurales</b> <br>
+                <b>3. Patrones Comportamentales </b><br>
+                <br><br>Ingresa al repositorio : <a href="https://github.com/JuanCarrill0/PatronesDeDiseno" target="_blank">Dale click Aquí</a>
+            </p>
+        </div>
+        <div class="flechaDer" type="button" (click)="showProjectsFront()" data-aos="zoom-in-up">
+            <img src="assets/Flecha.png" alt="">
+        </div>
+    </div>
+    <div class="boxProject" *ngIf="proyectos[4]">
+        <div class="flechaIzq" type="button" (click)="showProjectsBack()" data-aos="zoom-in-up">
+            <img src="assets/FlechaIzq.png" alt="">
+        </div>
+        <div class="infoProject">
+            <div class="boxtitle">
+                <h3>Ferreteria</h3>
+            </div>
+            <p class="text">
+                Aplicación de escritorio en la cual se implementa un CRUD para el inventario de una ferreteria. <br>
+                1. Conexión Local a base de datos SQL: <b>PostgreSQL </b><br>
+                2. <b>Java </b><br>
+                3. Arquitectura <b>Modelo-Vista-Controlador </b><br>
+                <br><br>Ingresa al repositorio : <a href="https://github.com/JuanCarrill0/Ferreteria_MVC_Sql" target="_blank">Dale click Aquí</a>
+            </p>
+        </div>
+        <div class="imageProject">
+            <img src="assets/Ferreteria.jpeg" alt="">
+        </div>
+        <div class="flechaDer" type="button" (click)="showProjectsFront()" data-aos="zoom-in-up">
+            <img src="assets/Flecha.png" alt="">
+        </div>
+    </div>
+
+</div>

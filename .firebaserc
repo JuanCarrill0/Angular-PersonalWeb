@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "juancarrillorepositorio"
+  },
+  "targets": {
+    "juancarrillorepositorio": {
+      "hosting": {
+        "Prueba": [
+          "juancarrillorepositorio"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.main{
+    margin-top: 25px;
+}
+.boxHabilidadesProfesionales,.boxHabilidadesPersonales{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titleBox-Profesionales,.titleBox-Personales{
+    text-align: center;
+    height: 50px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.titleBox-Profesionales{
+    background-color: #252525;
+}
+.titleBox-Personales{
+    background-color: #ffcc01;
+}
+
+.titleBox-Profesionales .title, .titleBox-Personales .title{
+    font-weight: 500;
+    font-size: 28px;
+}
+.titleBox-Profesionales .title{
+    color: white;
+}
+
+.text{
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text p{
+    font-size: 20px;
+}
+
+.imgProfesionales, .imgPersonales{
+    background-color: #ebebeb;
+}
+
+.imgPersonales img,.imgProfesionales img{
+    position: relative;
+    left: 100px;
+}
+
+.imgPersonales img{
+    top: -40px;
+}
+
+.boxFooter{
+    background-color: #ffcc01;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+/*Responsive Design*/
+
+@media (max-width: 800px) {
+    .boxHabilidadesProfesionales,.boxHabilidadesPersonales{
+        grid-template-columns: 1fr;
+    }
+    .imgPersonales img,.imgProfesionales img{
+        left: 20%;
+        width: 60%;
+        
+    }
+  }
+
+
+@media (max-width: 640px) {
+    .main{
+        width: 100%;
+    }
+    .imgPersonales img,.imgProfesionales img{
+        left: 40px;
+        width: 70%;
+        
+    }
+    .titleBox-Profesionales,.titleBox-Personales{
+        width: 300px;
+        height: 40px;
+    }
+    .titleBox-Profesionales .title, .titleBox-Personales .title{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .imgPersonales img{
+        top: 0px;
+    }
+  }

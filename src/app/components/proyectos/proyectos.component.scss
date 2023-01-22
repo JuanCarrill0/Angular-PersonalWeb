@@ -1,0 +1,87 @@
+
+
+.aboutMe{
+    position: relative;
+    top: -60px;
+    margin: 0 10%;
+    background-color: #ffcc01;
+    width: 330px;
+    height: 80px;
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+}
+
+.boxProject{
+    position: relative;
+    top: -30px;
+    display: grid;
+    grid-template-columns: 3% 49% 45% 1%;
+}
+
+.infoProject{
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    width: 500px;
+    height: 400px;
+    
+}
+
+.imageProject{
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+}
+.imageProject img{
+    width: 100%;
+    object-fit: contain;
+}
+.boxtitle{
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+    background-color: #ffcc01;
+    height: 60px;
+    width: 95%;
+}
+
+.boxtitle h3{
+    position: relative;
+    top: 20%; 
+}
+
+.text{
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    width: 450px;
+}
+
+.textYellow{
+    color:#ffcc01;
+}
+
+.flechaIzq,.flechaDer{
+    position: relative;
+    top: 50%;
+    height: 30px;
+}
+
+.flechaIzq:hover , .flechaDer:hover{
+    cursor: pointer;
+}
+
+.flechaIzq{
+    left: 34px;
+}
+
+.flechaIzq img, .flechaDer img{
+    width: 30px;
+}

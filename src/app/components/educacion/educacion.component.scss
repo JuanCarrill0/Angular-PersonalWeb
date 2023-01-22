@@ -1,0 +1,110 @@
+.main{
+    height: 500px;
+}
+.boxTitle{
+    text-align: center;
+    background-color: #ffcc01;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.boxSchool,.school,.schoolImage-d{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.boxSchool-u,.boxSchool-d{
+    font-size: 20px;
+    padding: 80px;
+}
+
+.schoolImage{
+    position: relative;
+    left: 80px;
+}
+
+.schoolImage img{
+    width: 150px;
+}
+
+.image-1 img, .image-2 img{
+    width: 250px;
+}
+
+.image-2 img{
+    position: relative;
+    top: -40px;
+}
+.boxSchool-d{
+    background-color: #ebebeb;
+    height: 300px;
+}
+
+.date{
+    color: #707070;
+}
+
+/*Responsive Design*/
+
+@media (max-width: 1000px) {
+    .main{
+        margin-bottom: 500px;
+    }
+    .boxSchool{
+        grid-template-columns: 1fr;
+    }
+  }
+
+
+@media (max-width: 640px) {
+
+    .boxTitle{
+        position: relative;
+        right: 5%;
+        height: 40px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .boxSchool-u,.boxSchool-d{
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .school{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .schoolInfo{
+        margin: 0 auto;
+        position: relative;
+        left: 20%;
+        width: 300px;
+    }
+    .schoolImage{
+        position: relative;
+        left: 35%;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+    .schoolImage img{
+        width: 30%;
+    }
+    .image-1 img{
+        width: 150px;
+    }
+    .image-2 img{
+        width: 180px;
+    }
+    .main{
+        margin-bottom: 320px;
+    }
+  }

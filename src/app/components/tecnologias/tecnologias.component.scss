@@ -1,0 +1,150 @@
+.boxTitle-lenguajes, .boxTitle-tecnologias{
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+}
+.boxTitle-lenguajes{
+    background-color: #252525;
+}
+
+.boxTitle-tecnologias{
+    background-color: #ffcc01;
+}
+
+.title{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.boxTitle-tecnologias .title{
+    color: black;
+}
+
+
+.lenguaje,.tecnologia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.boxLenguajes,.boxTecnologias{
+    position: relative;
+    top: 15px;
+    display: grid;
+    height: 180px;
+}
+
+.boxLenguajes{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box1{
+    grid-template-columns:  23% 23% 23% 23% 3%;
+}
+
+.box2{
+    grid-template-columns: 23% 23% 23% 23% 3%;
+}
+
+.flechaIzq, .flechaDer{
+    position: relative;
+    top: 25%;
+    justify-content: center;
+    padding: 10px;
+    height: 25px;
+}
+.flechaIzq img, .flechaDer img{
+    width: 30px;
+}
+
+.flechaIzq:hover ,.flechaDer:hover{
+    cursor: pointer;
+    
+}
+
+.imageLenguaje img, .imageTecnologia img{
+    width: 130px;
+}
+
+
+.lenguaje:hover{    
+    .imageLenguaje img{
+        width: 170px;
+    }
+
+}
+
+.tecnologia:hover{
+    .imageTecnologia img{
+        width: 170px;
+    }
+}
+
+/*Responsive Design*/
+
+@media (max-width: 1000px) {
+    .imageLenguaje img, .imageTecnologia img{
+        margin: 10px;
+        width: 50%;
+    }
+
+    .lenguaje:hover{    
+        .imageLenguaje img{
+            width: 120px;
+        }
+    }
+    
+    .tecnologia:hover{
+        .imageTecnologia img{
+            width: 120px;
+        }
+    }
+
+    .infoLenguaje,.infoTecnologia{
+        position: relative;
+        left: 30px;
+    }
+
+    .boxLenguajes,.boxTecnologias{
+        padding: 0px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 50px;
+    }
+  }
+
+
+@media (max-width: 640px) {
+    .main{
+        width: 100%;
+    }
+    .imageLenguaje img, .imageTecnologia img{
+        width: 70%;
+        margin: 0px;
+    }
+    .titleTecnologia,.titleLenguaje{
+        position: relative;
+        right: 50px;
+        font-size: 12px;
+    }
+    .boxTitle-lenguajes, .boxTitle-tecnologias{
+        width: 300px;
+        height: 40px;
+    }
+
+    .lenguaje:hover{    
+        .imageLenguaje img{
+            width: 70px;
+        }
+    }
+    
+    .tecnologia:hover{
+        .imageTecnologia img{
+            width: 70px;
+        }
+    }
+
+    .title{
+        font-size: 20px;
+    }
+  }

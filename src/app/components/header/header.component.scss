@@ -1,0 +1,105 @@
+
+.profileImage{
+    background-color: #252525;
+
+}
+
+.textRepo{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+
+}
+.profileImage img{
+    width: 300px;
+}
+.headerContent{
+    font-size: 24px;
+    background-color: #252525;
+
+}
+.headerBox{
+    display: grid;
+    grid-template-columns: 22% 78%;
+}
+
+.menu ul{
+    position: relative;
+    top: 20px;
+    display: flex;
+    color: #ffcc01;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+}
+
+.menu ul li:hover{
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.name{
+    color: #ffcc01;
+}
+.job{
+    color: white;
+    font-weight: 200;
+    position: relative;
+    top: 20px;
+}
+.name,.job{
+    text-align: center;
+}
+
+a{
+    color: #ffcc01;
+    text-decoration: none;
+}
+/*Responsive Design*/
+
+@media (max-width: 1000px) {
+    
+    .headerBox{
+        grid-template-columns: 40% 60%;
+    }
+  }
+
+
+  @media (max-width: 640px) {
+    .main{
+        width: 100%;
+    }
+    .menu{
+        font-size: 18px;
+    }
+
+    .headerBox{
+        grid-template-columns: 1fr;
+    }
+    .profileImage img{
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+
+    .menu ul{
+        right: 5%;
+        font-size: 15px;
+    }
+    
+    .job{
+        font-size: 25px;
+    }
+
+    .name{
+        font-size: 28px;
+    }
+
+    
+  }

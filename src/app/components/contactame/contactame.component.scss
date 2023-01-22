@@ -1,0 +1,68 @@
+    /* Estilos para el formulario */
+    form {
+        width: 100%;
+        margin: 30px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+      }
+  
+      /* Estilos para los inputs */
+      input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      /* Estilos para el botón */
+      input[type="submit"] {
+        width: 100%;
+        background-color: #ffcc01;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+  
+      /* Estilos para el botón al presionarlo */
+      input[type="submit"]:hover {
+        background-color: #ecc21a;
+      }
+
+      h2{
+        text-align: center;
+      }
+
+     /*CSS grid*/
+
+     .sectionForm{
+        display: grid;
+        grid-template-columns: 60% 40%;
+     }
+
+     .asideForm{
+        padding: 30px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+     }
+     .Red{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+     }
+
+     .imgRed img{
+        width: 60px;
+     }
+
+     a{
+        text-decoration: none;
+     }

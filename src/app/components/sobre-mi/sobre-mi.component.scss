@@ -1,0 +1,87 @@
+.main{
+    position: relative;
+    height: 400px;
+    
+}
+.content-box{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.aboutMe{
+    position: relative;
+    top: -60px;
+    margin: 0 10%;
+    background-color: #ffcc01;
+    width: 330px;
+    height: 80px;
+}
+.title{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+}
+.text{
+    font-size: 20px;
+}
+.aboutMe-Text{
+    background-color: #ebebeb;
+    position: relative;
+    top: -60px;
+    width: 90%;
+    padding: 20px;
+}
+
+.imgReference img{
+    width: 400px;
+}
+.bottom-box{
+    z-index: -1;
+    position: relative;
+    top: -120px;
+    background-color: #252525;
+    width: 100%;
+    height: 100px;
+}
+
+/*Responsive Design*/
+
+@media (max-width: 1000px) {
+    .imgReference img{
+        width: 100%;
+    }
+  }
+
+
+  @media (max-width: 640px) {
+    .main{
+        margin-bottom: 40%;
+        width: 100%;
+    }
+    .content-box{
+        grid-template-columns: 1fr;
+    }
+    .imgReference img{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+    .aboutMe-Text{
+        padding: 15px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .aboutMe{
+        z-index: 1;
+        margin: 0;
+        top: -50px;
+        width: 250px;
+        height: 60px;
+
+    }
+  }
