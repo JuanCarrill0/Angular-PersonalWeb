@@ -40,7 +40,7 @@
 }
 
 .menu ul li:hover{
-    font-size: 26px;
+    border-bottom: #ffcc01 1px solid;
     cursor: pointer;
 }
 
@@ -65,13 +65,15 @@ a{
 
 @media (max-width: 1000px) {
     
+    
     .headerBox{
         grid-template-columns: 40% 60%;
     }
   }
 
 
-  @media (max-width: 640px) {
+  @media (max-width: 680px) {
+
     .main{
         width: 100%;
     }
@@ -90,7 +92,7 @@ a{
 
     .menu ul{
         right: 5%;
-        font-size: 15px;
+        font-size: 18px;
     }
     
     .job{

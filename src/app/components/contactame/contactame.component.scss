@@ -1,7 +1,7 @@
     /* Estilos para el formulario */
     form {
-        width: 100%;
-        margin: 30px;
+        width: 80%;
+        margin: 30px auto;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 10px;
@@ -47,6 +47,7 @@
      }
 
      .asideForm{
+         position: relative;
         padding: 30px;
         display: grid;
         align-items: center;
@@ -65,4 +66,19 @@
 
      a{
         text-decoration: none;
+     }
+
+     @media (max-width: 640px){
+         .sectionForm{
+            grid-template-columns: 1fr;
+         }
+
+         .asideForm{
+            position: relative;
+            top: -50px;
+         }
+
+         .form{
+            margin: 0 auto;
+         }
      }

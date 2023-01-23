@@ -118,6 +118,10 @@
     .main{
         width: 100%;
     }
+
+    .boxLenguajes .boxTecnologias{
+        margin-bottom: 80px;
+    }
     .imageLenguaje img, .imageTecnologia img{
         width: 70%;
         margin: 0px;
@@ -146,5 +150,11 @@
 
     .title{
         font-size: 20px;
+    }
+
+    .flechaDer{
+        position: relative;
+        left: 80%;
+        top: -10px;
     }
   }

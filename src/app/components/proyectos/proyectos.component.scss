@@ -85,3 +85,48 @@
 .flechaIzq img, .flechaDer img{
     width: 30px;
 }
+
+@media (max-width: 640px){
+    .aboutMe{
+        position: relative;
+        top: -30px;
+        width: 250px;
+        height: 60px;
+     }
+
+    .title{
+        font-size: 30px;
+    }
+    .flechaDer{
+        position: relative;
+        left: 50%;
+    }
+    .flechaIzq{
+        display: none;
+    }
+
+    .boxProject{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .imageProject{
+        display: none;
+    }
+
+    .infoProject{
+        width: 380px;
+    }
+
+    .text{
+        width: 330px;
+    }
+
+    .infoProject{
+        font-size: 14px;
+    }
+
+    .boxtitle{
+        font-size: 18px;
+    }
+}
