@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import * as AOS from 'aos';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,19 +9,17 @@ import * as AOS from 'aos';
 })
 export class HeaderComponent implements OnInit {
 
-  componenteActivo:number = 0;
-
-
-  showComponents(indice:number) {
-    this.componenteActivo = indice;
-  }
-
-
   constructor() { }
+
+  scrollToSection(idSection:string) {
+    const element = document.getElementById(idSection);
+    if(element!=null){
+      element.scrollIntoView({behavior: "smooth", block:"center"});
+    }
+  }
 
   ngOnInit(): void {
     AOS.init();
-    window.addEventListener('load',AOS.refresh)
   }
 
 }

@@ -1,14 +1,13 @@
 <header class="main">
     <div class="headerBox">
-        <div class="profileImage" data-aos="fade-right" data-aos-offset="600">
+        <div class="profileImage " data-aos="fade-right" data-aos-offset="600">
             <img src="assets/FotoPerfil.jpg" alt="">
         </div>
         <div class="headerContent">
             <nav class="menu">
                 <ul>
-                    <li type="button" (click)="showComponents(0)">Sobre Mí</li>
-                    <li type="button" (click)="showComponents(1)">Proyectos</li>
-                    <li type="button" (click)="showComponents(2)">Contáctame</li>
+                    <li type="button" (click)="scrollToSection('proyectos')" >Proyectos</li>
+                    <li type="button" (click)="scrollToSection('contacto')">Contáctame</li>
                 </ul>
             </nav>
             <div class="info" data-aos="fade-right"  >
@@ -21,10 +20,9 @@
         </div>
     </div>
 </header>
-<proyectos *ngIf="componenteActivo == 1"></proyectos>
-<contacto *ngIf="componenteActivo == 2"></contacto>
-<sobre-mi *ngIf="componenteActivo == 0"></sobre-mi>
-<educacion *ngIf="componenteActivo == 0"></educacion>
-<tecnologias *ngIf="componenteActivo == 0"></tecnologias>
-<habilidades *ngIf="componenteActivo == 0"></habilidades>
+<sobre-mi ></sobre-mi>
+<educacion ></educacion>
+<tecnologias></tecnologias>
+<proyectos id="proyectos"></proyectos>
+<contacto id="contacto"></contacto>
 

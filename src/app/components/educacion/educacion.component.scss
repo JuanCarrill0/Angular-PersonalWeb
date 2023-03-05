@@ -2,16 +2,17 @@
     height: 500px;
 }
 .boxTitle{
-    text-align: center;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffcc01;
     width: 300px;
     height: 50px;
-    margin: 0 auto;
 }
 
 .title{
     font-size: 28px;
-    font-weight: 500;
 }
 
 .boxSchool,.school,.schoolImage-d{
@@ -30,7 +31,7 @@
 }
 
 .schoolImage img{
-    width: 150px;
+    width: 140px;
 }
 
 .image-1 img, .image-2 img{
@@ -43,7 +44,7 @@
 }
 .boxSchool-d{
     background-color: #ebebeb;
-    height: 300px;
+    height: 280px;
 }
 
 .date{

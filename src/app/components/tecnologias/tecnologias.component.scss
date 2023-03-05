@@ -1,8 +1,11 @@
 .boxTitle-lenguajes, .boxTitle-tecnologias{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     height: 50px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 .boxTitle-lenguajes{
     background-color: #252525;
@@ -15,7 +18,6 @@
 .title{
     color: white;
     font-size: 28px;
-    font-weight: 500;
 }
 
 .boxTitle-tecnologias .title{
@@ -26,12 +28,15 @@
 .lenguaje,.tecnologia{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
 }
 
 .boxLenguajes,.boxTecnologias{
-    position: relative;
-    top: 15px;
     display: grid;
+    align-items: center;
     height: 180px;
 }
 
@@ -48,8 +53,6 @@
 }
 
 .flechaIzq, .flechaDer{
-    position: relative;
-    top: 25%;
     justify-content: center;
     padding: 10px;
     height: 25px;
@@ -64,22 +67,9 @@
 }
 
 .imageLenguaje img, .imageTecnologia img{
-    width: 130px;
+    width: 120px;
 }
 
-
-.lenguaje:hover{    
-    .imageLenguaje img{
-        width: 170px;
-    }
-
-}
-
-.tecnologia:hover{
-    .imageTecnologia img{
-        width: 170px;
-    }
-}
 
 /*Responsive Design*/
 
@@ -87,18 +77,6 @@
     .imageLenguaje img, .imageTecnologia img{
         margin: 10px;
         width: 50%;
-    }
-
-    .lenguaje:hover{    
-        .imageLenguaje img{
-            width: 120px;
-        }
-    }
-    
-    .tecnologia:hover{
-        .imageTecnologia img{
-            width: 120px;
-        }
     }
 
     .infoLenguaje,.infoTecnologia{
@@ -119,33 +97,17 @@
         width: 100%;
     }
 
-    .boxLenguajes .boxTecnologias{
-        margin-bottom: 80px;
-    }
     .imageLenguaje img, .imageTecnologia img{
-        width: 70%;
-        margin: 0px;
+        width: 85%;
+        margin: 0;
     }
     .titleTecnologia,.titleLenguaje{
-        position: relative;
-        right: 50px;
         font-size: 12px;
     }
     .boxTitle-lenguajes, .boxTitle-tecnologias{
         width: 300px;
         height: 40px;
-    }
-
-    .lenguaje:hover{    
-        .imageLenguaje img{
-            width: 70px;
-        }
-    }
-    
-    .tecnologia:hover{
-        .imageTecnologia img{
-            width: 70px;
-        }
+        margin-top: 90px;
     }
 
     .title{
@@ -155,6 +117,6 @@
     .flechaDer{
         position: relative;
         left: 80%;
-        top: -10px;
+        top: -20px;
     }
   }
